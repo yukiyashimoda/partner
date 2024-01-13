@@ -55,7 +55,7 @@ html, body {
 }
 
 .card.clicked .additional {
-  background-image: url("/toyokoWIDE.JPG");
+  background-image: url("/toyokoWIDE.jpg");
   width: 50px;
   z-index: 2;
 }
