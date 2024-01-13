@@ -1,0 +1,239 @@
+html, body {
+  background: #e0e0e0;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  width: 450px;
+  height: 250px;
+  background-color: #494e68;
+  border-radius: 25px;
+  background: #e0e0e0;
+  box-shadow: 10px 10px 12px #cccccc, -10px -10px 12px #f4f4f4;
+  overflow: hidden;
+  position: relative;
+  margin: 1.5rem;
+}
+
+.card h1 {
+  text-align: right;
+  font-size: 18px;
+  font-weight: 800;
+  margin-top: 30px;
+  margin-right: 0px;
+  z-index: 0;
+  color: #3c3c3c;
+  letter-spacing: 0.2cap;
+}
+
+.card p {
+  text-align: right;
+  font-size: 12px;
+  margin-top: 40px;
+  color: #985e6d;
+}
+
+.card .additional {
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  background-image: url("/toyokoinn.jpg");
+  background-size: cover;
+  background-position: left;
+  transition: width 0.2s;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.card:hover .additional {
+  background-image: url("/toyokoWIDE.JPG");
+  width: 50px;
+  z-index: 2;
+}
+
+.card.green .additional {
+  background: linear-gradient(#92bCa6, #A2CCB6);
+}
+
+.card:hover .additional {
+  width: 100%;
+  border-radius: 0 5px 5px 0;
+}
+
+.card .additional .user-card {
+  width: 150px;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+
+.card .additional .user-card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  right: -2px;
+  height: 80%;
+  border-left: 2px solid rgba(0, 0, 0, 0.025);
+}
+
+.card .additional .user-card .level,
+.card .additional .user-card .points {
+  top: 10%;
+  left: 32%;
+  color: #f5f5f5;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: bold;
+  background: #c06014;
+  padding: 0.125rem 0.75rem;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.card .additional .more-info {
+  width: 300px;
+  position: absolute;
+  left: 150px;
+  height: 100%;
+}
+
+.card .additional .more-info h1 {
+  color: #fff;
+  margin-bottom: 0;
+  text-align: right;
+  margin-right: 15px;
+}
+
+.card .additional .coords {
+  margin: 20px;
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: right;
+}
+
+.card .additional .coords span+span {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: right;
+}
+
+.card .additional .stats {
+  font-size: 2rem;
+  display: flex;
+  position: absolute;
+  color: #fff;
+}
+
+.card .additional .stats>div {
+  flex: 1;
+  text-align: center;
+}
+
+.card .additional .stats div.title {
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.card .additional .stats div.value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: right;
+}
+
+.card .additional .stats div.value.infinity {
+  font-size: 2.5rem;
+  text-align: right;
+}
+
+.card .general {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.card .general .introduction {
+  text-align: justify;
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.card .general .more {
+  position: absolute;
+  bottom: 3.5rem;
+  right: 1rem;
+  font-size: 12px;
+  font-weight: 600;
+  color: #c06014;
+}
+
+.card .general .benefits {
+  position: absolute;
+  bottom: 20px;
+  right: 1rem;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.card .additional .stats img {
+  height: 2rem;
+  width: auto;
+}
+
+.stats img.icon {
+  height: 20px;
+  width: auto;
+  border-radius: 5px;
+  background-color: #000;
+}
+
+.stats {
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  width: fit-content;
+  height: fit-content;
+  right: 0%;
+  bottom: 0%;
+}
+
+.stats>div {
+  margin: 0 5px;
+}
+
+.stats img.icon {
+  height: 20px;
+  width: auto;
+  border-radius: 5px;
+  background-color: #c06014;
+  padding: 5px;
+  margin: 5px;
+}
+
+.stats p {
+  margin: 0;
+  padding: 0;
+}
