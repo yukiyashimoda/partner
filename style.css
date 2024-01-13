@@ -233,7 +233,8 @@ html, body {
   margin: 5px;
 }
 
-.stats p {
+.stats a {
   margin: 0;
   padding: 0;
+  left: 15px;
 }
