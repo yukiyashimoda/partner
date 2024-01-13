@@ -54,8 +54,8 @@ html, body {
   z-index: 2;
 }
 
-.card:hover .additional {
-  background-image: url("/toyokoWIDE.jpg");
+.card.clicked .additional {
+  background-image: url("/toyokoWIDE.JPG");
   width: 50px;
   z-index: 2;
 }
@@ -64,7 +64,7 @@ html, body {
   background: linear-gradient(#92bCa6, #A2CCB6);
 }
 
-.card:hover .additional {
+.card.clicked .additional {
   width: 100%;
   border-radius: 0 5px 5px 0;
 }
@@ -236,13 +236,4 @@ html, body {
 .stats p {
   margin: 0;
   padding: 0;
-}
-
-@media screen and (max-width: 767px) {
-  
-  .card {
-    width: 400px;
-    display: block;
-    margin-bottom: 20px;
-  }
 }
