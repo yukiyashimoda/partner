@@ -210,20 +210,22 @@ html, body {
 }
 
 .stats {
+  display: flex; /* Added to ensure the stats items are flex containers */
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: center; /* Center vertically within the .stats container */
   margin-right: 5px;
   margin-bottom: 5px;
   width: fit-content;
   height: fit-content;
   left: 0;
-  bottom: 0%;
+  bottom: 0;
 }
 
 .stats>div {
   margin: 0 5px;
+  display: flex; /* Added to ensure the stats items are flex containers */
+  align-items: center; /* Center vertically within each stats item */
 }
-
 .stats img.icon {
   height: 20px;
   width: auto;
