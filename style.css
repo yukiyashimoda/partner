@@ -237,17 +237,3 @@ html, body {
   margin: 0;
   padding: 0;
 }
-
-@media (max-width: 767px) {
-  .card {
-    width: calc(100% - 30px); /* スマートフォンの場合、両端に15pxのマージンを設定 */
-    max-width: none; /* スマートフォンの場合、最大幅を解除 */
-    margin: 1.5rem 15px; /* スマートフォンの場合、両端に15pxのマージンを設定 */
-  }
-
-  .card h1 {
-    font-size: 16px; /* スマートフォンの場合、フォントサイズを調整 */
-  }
-
-  /* その他のスタイルも必要に応じて調整 */
-}
