@@ -216,7 +216,7 @@ html, body {
   margin-bottom: 5px;
   width: fit-content;
   height: fit-content;
-  right: 0%;
+  left: 0;
   bottom: 0%;
 }
 
@@ -236,5 +236,4 @@ html, body {
 .stats a {
   margin: 0;
   padding: 0;
-  left: 15px;
 }
