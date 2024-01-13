@@ -237,3 +237,11 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+@media screen and (max-width: 767px) {
+  .card {
+    width: 350px;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
